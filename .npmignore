@@ -1,0 +1,6 @@
+/.vscode
+/src
+/.editorconfig
+/.eslintrc
+/.prettierrc
+/tsconfig.json

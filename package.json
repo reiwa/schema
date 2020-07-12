@@ -8,7 +8,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "babel src --out-dir lib --extensions .ts -w"
+    "build": "babel src --out-dir lib --extensions .ts",
+    "build:tsc": "tsc",
+    "build:watch": "babel src --out-dir lib --extensions .ts -w",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@nexus/schema": "^0.14.0"

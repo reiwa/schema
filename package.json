@@ -1,6 +1,6 @@
 {
   "name": "@reiwa/schema",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "lib/index.js",
   "license": "MIT",
   "repository": "https://github.com/reiwa/schema",
@@ -11,7 +11,7 @@
     "build": "babel src --out-dir lib --extensions .ts",
     "build:tsc": "tsc",
     "build:watch": "babel src --out-dir lib --extensions .ts -w",
-    "prepublish": "yarn build"
+    "prepublishOnly": "yarn build && yarn build:tsc"
   },
   "dependencies": {
     "@nexus/schema": "^0.14.0"
